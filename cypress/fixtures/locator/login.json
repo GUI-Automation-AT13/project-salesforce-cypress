@@ -1,0 +1,5 @@
+{
+    "usernameTxtBox" : "#username",
+    "passwordTxtBox" : "#password",
+    "loginBtn" : "#Login"
+}

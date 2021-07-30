@@ -1,0 +1,9 @@
+{
+    "chromeWebSecurit": false,
+    "watchForFileChanges": false,
+    "baseUrl" : "",
+    "env" : {
+        "username" : "",
+        "password" : ""
+    }
+}

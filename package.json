@@ -1,0 +1,19 @@
+{
+  "name": "project-salesforce-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "checkstyle" : "node_modules/.bin/eslint cypress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0"
+  }
+}
