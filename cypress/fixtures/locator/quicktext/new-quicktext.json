@@ -1,1 +1,11 @@
-{}
+{
+  "name": "#Name",
+  "message": "#Message",
+  "mergeField": ".mergeFieldLookup > .btn",
+  "mergeTypeSelect": "#mergeTypeSelect",
+  "mergeFieldSelect": "#mergeFieldSelect",
+  "category": "select[id='Category']",
+  "channel": "select[id='Channel_unselected']",
+  "channelRightArrow": "#Channel_right_arrow",
+  "saveBtn": "#bottomButtonRow > [value=' Save ']"
+}
