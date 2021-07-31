@@ -1,9 +1,9 @@
 {
     "chromeWebSecurit": false,
     "watchForFileChanges": false,
-    "baseUrl" : "",
+    "baseUrl" : "https://none773-dev-ed.my.salesforce.com/",
     "env" : {
-        "username" : "",
-        "password" : ""
+        "username" : "jrojas@freeorg01.com",
+        "password" : "fundacionjalaat13"
     }
 }
