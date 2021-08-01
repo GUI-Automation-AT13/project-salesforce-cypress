@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/cypress run",
-    "checkstyle" : "node_modules/.bin/eslint cypress"
+    "checkstyle": "node_modules/.bin/eslint cypress"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,10 @@
     "cypress": "^8.1.0"
   },
   "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.2.0",
     "eslint": "^7.31.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
