@@ -1,9 +1,9 @@
 {
     "chromeWebSecurit": false,
     "watchForFileChanges": false,
-    "baseUrl" : "",
+    "baseUrl" : "https://jpcorp-dev-ed.my.salesforce.com/",
     "env" : {
-        "username" : "",
-        "password" : ""
+        "username" : "juampi7237@gmail.com",
+        "password" : "JP123456jp"
     }
 }
