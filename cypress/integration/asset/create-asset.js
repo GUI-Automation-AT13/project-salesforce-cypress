@@ -28,7 +28,6 @@ describe('Create an Asset', () => {
         const asset = {
             "account": 'cuenta 13',
             "competitor": true,
-            /* "contact": 'contact2', */
             "description": 'Description',
             "install date": '28/7/2021',
             "name": 'New Asset',
