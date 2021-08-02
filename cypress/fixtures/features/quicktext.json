@@ -1,0 +1,9 @@
+{
+    "name" : "Quick Text Name",
+    "message" : "Message Quick Text",
+    "relatedTo" : "Account Fields",
+    "fieldOption" : "Account Number",
+    "category" : "FAQ",
+    "channel" : "Phone",
+    "finalChannel" : "Email; Phone"
+}
