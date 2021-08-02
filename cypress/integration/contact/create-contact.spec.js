@@ -7,7 +7,6 @@ const newContact = require('../../src/salesforce/contact/new-contact')
 const detailContact = require('../../src/salesforce/contact/detail-contact')
 const data = require('../../fixtures/features/contact.json')
 
-
 describe('test for contact feature', () => {
     beforeEach(() => {
         pageTransporter('/')
@@ -15,8 +14,7 @@ describe('test for contact feature', () => {
     })
 
     it('titleTest', () => {
-        // pageTransporter('/'.concat(endPoint.contact))
-        pageTransporter(endPoint.contact)
+        pageTransporter('/'.concat(endPoint.contact))
         contact.clickNewContactBtn()
         newContact.addContactSalutation(data.salutation)
         newContact.addContactFirstName(data.firstName)
