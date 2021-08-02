@@ -4,4 +4,4 @@ Cypress.Commands.add('login', (username, password) => {
         cy.get(login.passwordTxtBox).should('be.visible').clear().type(password)
         cy.get(login.loginBtn).should('be.visible').click()
     })
- })
+})

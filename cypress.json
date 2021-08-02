@@ -1,9 +1,9 @@
 {
     "chromeWebSecurit": false,
     "watchForFileChanges": false,
-    "baseUrl" : "https://jala3-dev-ed.my.salesforce.com/",
+    "baseUrl" : "https://none773-dev-ed.my.salesforce.com/",
     "env" : {
-        "username" : "edsonarios@freeorg01.com",
-        "password" : "Bolivia123"
+        "username" : "jrojas@freeorg01.com",
+        "password" : "fundacionjalaat13"
     }
 }
