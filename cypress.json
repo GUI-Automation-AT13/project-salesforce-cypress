@@ -1,9 +1,9 @@
 {
     "chromeWebSecurit": false,
     "watchForFileChanges": false,
-    "baseUrl" : "",
+    "baseUrl" : "https://jala3-dev-ed.my.salesforce.com/",
     "env" : {
-        "username" : "",
-        "password" : ""
+        "username" : "edsonarios@freeorg01.com",
+        "password" : "Bolivia123"
     }
 }

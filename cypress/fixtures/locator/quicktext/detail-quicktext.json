@@ -1,1 +1,6 @@
-{}
+{
+  "formName": "#Name_ileinner",
+  "formMessage": "#Message_ileinner",
+  "formCategory": "#Category_ileinner",
+  "formChannel": "#Channel_ileinner"
+}
