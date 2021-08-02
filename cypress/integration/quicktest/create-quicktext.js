@@ -3,16 +3,9 @@ const {pageTransporter} = require('../../src/salesforce/transporter')
 const quickText = require('../../src/salesforce/quickText/quickText')
 const newQuickText = require('../../src/salesforce/quickText/new-quicktext')
 const detailQuickText = require('../../src/salesforce/quickText/detail-quicktext')
+const dataQuickText = require('../../fixtures/features/quicktext.json')
 
 describe('test for feature Quick Text', () => {
-    const name = 'Quick Text Name'
-    const message = 'Message Quick Text'
-    const relatedTo = 'Account Fields'
-    const fieldOption = 'Account Number'
-    const category = 'FAQ'
-    const channel = 'Phone'
-    const finalChannel = 'Email; Phone'
-
     beforeEach(() => {
         pageTransporter('/')
         cy.login(Cypress.env('username'), Cypress.env('password'))
@@ -20,16 +13,16 @@ describe('test for feature Quick Text', () => {
     it('new quickText test', () => {
         pageTransporter(endPoint.quicktext)
         quickText.newQuickText()
-        newQuickText.setName(name)
-        newQuickText.setMessage(message)
-        newQuickText.insertMergeField(relatedTo, fieldOption)
-        newQuickText.setCategory(category)
-        newQuickText.setChannel(channel)
+        newQuickText.setName(dataQuickText.name)
+        newQuickText.setMessage(dataQuickText.message)
+        newQuickText.insertMergeField(dataQuickText.relatedTo, dataQuickText.fieldOption)
+        newQuickText.setCategory(dataQuickText.category)
+        newQuickText.setChannel(dataQuickText.channel)
         newQuickText.clickSaveBtn()
         // asserts
-        detailQuickText.getFormName().should('have.text', name)
-        detailQuickText.getFormMessage().should('have.text', message)
-        detailQuickText.getFormCategory().should('have.text', category)
-        detailQuickText.getFormChannel().should('have.text', finalChannel)
+        detailQuickText.getFormName().should('have.text', dataQuickText.name)
+        detailQuickText.getFormMessage().should('have.text', dataQuickText.message)
+        detailQuickText.getFormCategory().should('have.text', dataQuickText.category)
+        detailQuickText.getFormChannel().should('have.text', dataQuickText.finalChannel)
     })
 })
