@@ -5,23 +5,18 @@ const {pageTransporter} = require('../../src/salesforce/transporter')
 const contact = require('../../src/salesforce/contact/contact')
 const newContact = require('../../src/salesforce/contact/new-contact')
 const detailContact = require('../../src/salesforce/contact/detail-contact')
-
+const data = require('../../fixtures/features/contact.json')
 
 
 describe('test for contact feature', () => {
-
-    let time = 1000
-
-    beforeEach(()=>{
+    beforeEach(() => {
         pageTransporter('/')
-        cy.login(Cypress.env('username'),Cypress.env('password'))
-        cy.fixture('features/contact').then(function(data){
-            globalThis.data=data
-        })
+        cy.login(Cypress.env('username'), Cypress.env('password'))
     })
 
     it('titleTest', () => {
-        pageTransporter('/'+endPoint.contact)
+        // pageTransporter('/'.concat(endPoint.contact))
+        pageTransporter(endPoint.contact)
         contact.clickNewContactBtn()
         newContact.addContactSalutation(data.salutation)
         newContact.addContactFirstName(data.firstName)
@@ -52,7 +47,7 @@ describe('test for contact feature', () => {
         newContact.addContactLevel(data.level)
         newContact.addContactDescription(data.description)
         newContact.clickSaveButton()
-        let fullName = data.salutation+' '+data.firstName+" "+data.lastName 
+        const fullName = data.salutation.concat(' ').concat(data.firstName).concat(" ").concat(data.lastName)
         detailContact.getTopName().should('contain.text', fullName)
         detailContact.getDetailName().should('contain.text', fullName)
         detailContact.getUrl()
