@@ -1,1 +1,16 @@
-{}
+{
+    "nameTxtBox" : "#Name",
+    "accountNameTxtBox" : "#Account",
+    "serialNumberTxtBox" : "#SerialNumber",
+    "saveBtn" : "#bottomButtonRow > [value=' Save ']",
+    "installDateCalendar" : "#InstallDate",
+    "purchaseDateCalendar" : "#PurchaseDate",
+    "usageEndDateCalendar" : "#UsageEndDate",
+    "quantityTxtBox" : "#Quantity",
+    "priceTxtBox" : "#Price",
+    "descriptionTxtBox" : "#Description",
+    "statusComboBox" : "#Status",
+    "isCompetitorProduct" : "#IsCompetitorProduct",
+    "productNameTxtBox": "#Product2",
+    "contactNameTxtBox" : "#Contact"
+}

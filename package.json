@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "cypress open",
     "test": "node_modules/.bin/cypress run",
     "checkstyle": "node_modules/.bin/eslint cypress"
   },

@@ -1,1 +1,15 @@
-{}
+{
+    "nameTxt" : "#Name_ileinner",
+    "accountNameTxt" : "#lookup0015e00000Cts0EAccount",
+    "productNameTxt" : "#Product2_ileinner",
+    "contactNameTxt" : "#Contact_ileinner",
+    "serialNumberTxt" : "#SerialNumber_ileinner",
+    "installDateTxt" : "#InstallDate_ileinner",
+    "purchaseDateTxt" : "#PurchaseDate_ilecell",
+    "usageEndDateTxt" : "#UsageEndDate_ileinner",
+    "quantityTxt" : "#Quantity_ileinner",
+    "priceTxt" : "#Price_ilecell",
+    "descriptionTxt" : "#Description_ileinner",
+    "competitorAssetImg" : "#IsCompetitorProduct_chkbox",
+    "statusTxt" : "#Status_ileinner"
+}
