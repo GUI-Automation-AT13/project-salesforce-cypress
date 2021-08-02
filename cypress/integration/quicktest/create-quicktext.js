@@ -4,11 +4,10 @@ const quickText = require('../../src/salesforce/quickText/quickText')
 const newQuickText = require('../../src/salesforce/quickText/new-quicktext')
 const detailQuickText = require('../../src/salesforce/quickText/detail-quicktext')
 const dataQuickText = require('../../fixtures/features/quicktext.json')
-
 describe('test for feature Quick Text', () => {
     beforeEach(() => {
         pageTransporter('/')
-        cy.login(Cypress.env('username'), Cypress.env('password'))
+        cy.login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
     })
     it('new quickText test', () => {
         pageTransporter(endPoint.quicktext)
