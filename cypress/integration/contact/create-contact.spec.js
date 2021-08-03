@@ -14,7 +14,6 @@ describe('test for contact feature', () => {
     })
 
     it('titleTest', () => {
-        // pageTransporter('/'.concat(endPoint.contact))
         pageTransporter(endPoint.contact)
         contact.clickNewContactBtn()
         newContact.addContactSalutation(data.salutation)
