@@ -15,11 +15,3 @@ export function getCreatedBy() {
 export function getLastModifiedBy() {
   cy.get(contact.lastModifiedBy);
 }
-
-export function getUrl() {
-  let url = cy.url();
-  cy.log(url);
-  cy.log(cy.url());
-  let url2 = cy.location("pathname");
-  cy.log(cy.location("pathname"));
-}
