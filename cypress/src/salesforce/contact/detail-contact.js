@@ -9,9 +9,9 @@ export function getDetailName() {
 }
 
 export function getCreatedBy() {
-  cy.get(contact.createdBy);
+  return cy.get(contact.createdBy);
 }
 
 export function getLastModifiedBy() {
-  cy.get(contact.lastModifiedBy);
+  return cy.get(contact.lastModifiedBy);
 }
