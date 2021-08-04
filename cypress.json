@@ -1,8 +1,14 @@
 {
-    "chromeWebSecurit": false,
-    "watchForFileChanges": false,
     "env": {
         "API_LOGIN": "https://login.salesforce.com/services/oauth2/token",
         "API_FEATURES": "/services/data/v51.0/sobjects/"
+    },
+    "chromeWebSecurit": false,
+    "watchForFileChanges": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true
     }
 }

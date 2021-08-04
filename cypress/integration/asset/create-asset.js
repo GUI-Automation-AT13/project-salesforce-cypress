@@ -8,8 +8,8 @@ const assets = require('../../fixtures/locator/asset/assets.json')
 describe('Create an Asset', () => {
 
     beforeEach('navigate to salesforce login page', () => {
-        pageTransporter("")
-        cy.login(Cypress.env('username'), Cypress.env('password'))
+        pageTransporter("/")
+        cy.login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
         pageTransporter(endpoint.asset)
         clickField(assets.newAssetBtn)
     })

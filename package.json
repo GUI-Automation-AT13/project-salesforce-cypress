@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cypress open",
     "test": "node_modules/.bin/cypress run",
-    "checkstyle": "node_modules/.bin/eslint cypress"
+    "checkstyle": "node_modules/.bin/eslint cypress",
+    "cy:run": "node ./scripts/cypress.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,11 @@
   },
   "devDependencies": {
     "cypress-cucumber-preprocessor": "^4.2.0",
-    "eslint": "^7.31.0"
+    "eslint": "^7.31.0",
+    "mocha": "^9.0.3",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
