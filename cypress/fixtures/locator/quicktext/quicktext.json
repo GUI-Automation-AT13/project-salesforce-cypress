@@ -1,3 +1,4 @@
 {
-  "newQuickTextBtn": "input[name='new']"
+  "newQuickTextBtn": "input[name='new']",
+  "findNameFromTable": "div[id='%s_Name'] span"
 }

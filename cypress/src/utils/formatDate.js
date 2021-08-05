@@ -5,6 +5,7 @@ export function getCurrentDate() {
     'hour': "numeric",
     'minute': "numeric",
     'month': "numeric",
+    'second': "numeric",
     'year': "numeric"
   };
   const actualDate = new Date();
