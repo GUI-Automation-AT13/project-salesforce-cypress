@@ -19,31 +19,18 @@ describe('test for contact feature', () => {
         clickField(contact.newContactBtn)
     })
 
-    // beforeEach(() => {
-    //     clickField(contact.newContactBtn)
-    // })
-
-    // afterEach(() => {
-    //     pageTransporter(endPoint.contact)
-    // })
-
     it('create contact with all fields', () => {
         createContact(data)
         validateContact(data)
-        // pageTransporter(endPoint.contact)
     });
 
     it.only('Validated Duplicate Record', () => {
         createContact(dataDuplicate)
         cy.valid_alert_field(newContactJSON.alertSelectorMessage, newContactJSON.alertMessage)
-        // clickField(newContactJSON.cancelBtn)
-        // pageTransporter(endPoint.contact)
     });
 
     it.only('Validated Invalida Data', () => {
         createContact(invalidData)
         cy.valid_alert_field(newContactJSON.alertSelectorInvalidData, newContactJSON.invalidDataMessage)
-        // clickField(newContactJSON.cancelBtn)
-        // pageTransporter(endPoint.contact)
     });
 })
