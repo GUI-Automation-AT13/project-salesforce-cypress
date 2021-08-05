@@ -23,3 +23,6 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("valid_alert_field", (selector, message) => {
+  cy.get(selector).should("be.visible").should("contain.text", message);
+});

@@ -2,9 +2,12 @@
     "salutation": "#name_salutationcon2",
     "firstName": "#name_firstcon2",
     "lastName": "#name_lastcon2",
+    "accountName":"#con4",
+    "accountNameIcon": "#con4_lkwgt > .lookupIcon",
     "birthday": "#con7",
     "title": "#con5",
     "deparment": "#con6",
+    "reportsTo": "#con8",
     "leadSource": "#con9",
     "phone": "#con10",
     "homePhone": "#con13",
@@ -27,5 +30,9 @@
     "language": "#00N5e00000KkjUz",
     "level": "#00N5e00000KkjV0",
     "description": "#con20",
-    "saveBtn": "td[id='bottomButtonRow'] input[title='Save']"
+    "saveBtn": "td[id='bottomButtonRow'] input[title='Save']",
+    "alertSelectorMessage": "#ep > :nth-child(2) > :nth-child(2)",
+    "alertMessage": "1 Possible Duplicate Record FoundUse one of these records?",
+    "alertSelectorInvalidData" : "#errorDiv_ep",
+    "invalidDataMessage":"Error: Invalid Data. Review all error messages below to correct your data."
 }
