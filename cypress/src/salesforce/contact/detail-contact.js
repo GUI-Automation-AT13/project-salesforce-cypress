@@ -5,22 +5,6 @@ import {iterateSetToRunMap} from '../../core/map-actions'
 import {validateConteinTextInField} from '../../core/action'
 const {getCurrentDate} = require('../../utils/formatDate')
 
-export function getTopName() {
-  return cy.get(contact.topName);
-}
-
-export function getDetailName() {
-  return cy.get(contact.detailName);
-}
-
-export function getCreatedBy() {
-  return cy.get(contact.createdBy);
-}
-
-export function getLastModifiedBy() {
-  return cy.get(contact.lastModifiedBy);
-}
-
 function setValidationContactMap(contactData) {
   const contactMap = new Map()
   const createdBy = getCurrentDate()

@@ -34,5 +34,6 @@
     "alertSelectorMessage": "#ep > :nth-child(2) > :nth-child(2)",
     "alertMessage": "1 Possible Duplicate Record FoundUse one of these records?",
     "alertSelectorInvalidData" : "#errorDiv_ep",
-    "invalidDataMessage":"Error: Invalid Data. Review all error messages below to correct your data."
+    "invalidDataMessage":"Error: Invalid Data. Review all error messages below to correct your data.",
+    "cancelBtn":"#bottomButtonRow > [value='Cancel']"
 }
