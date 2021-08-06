@@ -1,19 +1,7 @@
-export function setField(selector, inputText) {
-    cy.get(selector).type(inputText)
-}
-
-export function clickField(selector) {
-    cy.get(selector).click()
-}
-
-export function checkField(selector) {
-    cy.get(selector).check()
-}
-
-export function selectField(selector, option) {
-    cy.get(selector).select(option)
-}
-
-export function validateTextInField(selector, fieldText) {
-    cy.get(selector).should('have.text', fieldText)
+export function login (username, password) {
+cy.fixture("locator/login").then((loginData) => {
+        cy.get(loginData.usernameTxtBox).should('be.visible').clear().type(username)
+        cy.get(loginData.passwordTxtBox).should('be.visible').clear().type(password)
+        cy.get(loginData.loginBtn).should('be.visible').click()
+    })
 }
