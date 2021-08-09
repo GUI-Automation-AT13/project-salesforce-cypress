@@ -21,5 +21,6 @@
     "level": "#\\30 0N5e00000KkjV0_ileinner",
     "description": "#con20_ileinner",
     "createdBy": "#CreatedBy_ileinner",
-    "lastModifiedBy": "#LastModifiedBy_ileinner"    
+    "lastModifiedBy": "#LastModifiedBy_ileinner",
+    "deleteBtn":"#bottomButtonRow > [value='Delete']" 
 }
