@@ -1,6 +1,6 @@
 {
     "nameTxt" : "#Name_ileinner",
-    "accountNameTxt" : "#lookup0015e00000Cts0EAccount",
+    "accountNameTxt" : "div#Account_ileinner > a",
     "productNameTxt" : "#Product2_ileinner",
     "contactNameTxt" : "#Contact_ileinner",
     "serialNumberTxt" : "#SerialNumber_ileinner",

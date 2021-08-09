@@ -1,3 +1,9 @@
 {
-    "newAssetBtn" : ":nth-child(1) > .btn"
+    "newAssetBtn" : ":nth-child(1) > .btn",
+    "assetNameTbTxt": "_Name > a > span",
+    "serialNumberTbTxt": "_SerialNumber > a > span",
+    "installDateTbTxt": "_InstallDate",
+    "accountTbTxt": "_Account > a > span",
+    "contactTbTxt": "_Contact > a > span",
+    "productTbTxt": "_Product2 > a > span"
 }
