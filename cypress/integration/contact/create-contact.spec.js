@@ -7,16 +7,16 @@ const dataDuplicate = require('../../fixtures/features/contact/duplicate_record.
 const invalidData = require('../../fixtures/features/contact/invalid_data.json')
 const newContactJSON = require('../../fixtures/locator/contact/new-contact.json')
 const contact = require("../../fixtures/locator/contact/contacts.json");
-import {clickField} from '../../src/core/action'
 import {createContact} from '../../src/salesforce/contact/new-contact'
+import {login} from '../../src/core/action'
 import {validateContact} from '../../src/salesforce/contact/detail-contact'
 
 describe('test for contact feature', () => {
     beforeEach(() => {
         pageTransporter('/')
-        cy.login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
+        login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
         pageTransporter(endPoint.contact)
-        clickField(contact.newContactBtn)
+        cy.clickField(contact.newContactBtn)
     })
 
     it('create contact with all fields', () => {
@@ -24,7 +24,7 @@ describe('test for contact feature', () => {
         validateContact(data)
     });
 
-    it.only('Validated Duplicate Record', () => {
+    it('Validated Duplicate Record', () => {
         createContact(dataDuplicate)
         cy.valid_alert_field(newContactJSON.alertSelectorMessage, newContactJSON.alertMessage)
     });
