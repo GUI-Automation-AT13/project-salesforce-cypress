@@ -1,6 +1,6 @@
-const {getJsonEntityAttributes} = require('../../core/entity-actions')
-const {iterateSetToRunMap} = require('../../core/map-actions')
-const quickText = require('../../../fixtures/locator/quicktext/new-quicktext.json')
+const {getJsonEntityAttributes} = require('../../../core/entity-actions')
+const {iterateSetToRunMap} = require('../../../core/map-actions')
+const quickText = require('../../../../fixtures/locator/quicktext/new-quicktext.json')
 
 function insertRelatedTo(relatedToOption) {
     cy.clickField(quickText.mergeField)

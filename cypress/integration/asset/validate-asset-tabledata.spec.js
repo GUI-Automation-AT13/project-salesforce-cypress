@@ -1,6 +1,6 @@
-import {login} from '../../src/core/action'
-import {pageTransporter} from '../../src/salesforce/transporter'
-import {validateTableData} from '../../src/salesforce/validate-tabledata'
+import {login} from '../../src/salesforce/ui/action'
+import {pageTransporter} from '../../src/salesforce/ui/transporter'
+import {validateTableData} from '../../src/salesforce/ui/validate-tabledata'
 const endpoint = require('../../fixtures/endpoint/endpoint.json')
 
 describe('Create an Asset', () => {

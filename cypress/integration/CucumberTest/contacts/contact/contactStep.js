@@ -2,12 +2,12 @@
 
 import {And, Given, Then, When} from "cypress-cucumber-preprocessor/steps";
 const endPoint = require('../../../../fixtures/endpoint/endpoint.json')
-const {pageTransporter} = require('../../../../src/salesforce/transporter')
+const {pageTransporter} = require('../../../../src/salesforce/ui/transporter')
 const contact = require("../../../../fixtures/locator/contact/contacts.json");
 const {dataTableToJson} = require('../../../../src/utils/convertToJson')
-import {createContact} from '../../../../src/salesforce/contact/new-contact'
-import {login} from '../../../../src/core/action'
-import {validateContact , deleteContact} from '../../../../src/salesforce/contact/detail-contact'
+import {createContact} from '../../../../src/salesforce/ui/contact/new-contact'
+import {login} from '../../../../src/salesforce/ui/action'
+import {validateContact , deleteContact} from '../../../../src/salesforce/ui/contact/detail-contact'
 
 let newObject;
 

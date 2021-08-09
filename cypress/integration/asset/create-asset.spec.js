@@ -1,7 +1,7 @@
-import {createAsset} from '../../src/salesforce/asset/new-asset'
-import {login} from '../../src/core/action'
-import {pageTransporter} from '../../src/salesforce/transporter'
-import {validateAsset} from '../../src/salesforce/asset/validate-asset'
+import {createAsset} from '../../src/salesforce/ui/asset/new-asset'
+import {login} from '../../src/salesforce/ui/action'
+import {pageTransporter} from '../../src/salesforce/ui/transporter'
+import {validateAsset} from '../../src/salesforce/ui/asset/validate-asset'
 const endpoint = require('../../fixtures/endpoint/endpoint.json')
 const assets = require('../../fixtures/locator/asset/assets.json')
 
