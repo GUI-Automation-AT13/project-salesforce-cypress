@@ -5,10 +5,10 @@ const detailQuickText = require('../../../fixtures/locator/quickText/detail-quic
 
 function setValidationQuickTextMap(quickTextJson) {
     const quickTextMap = new Map()
-    quickTextMap.set("name", () => validateTextInField(detailQuickText.formName, quickTextJson.name))
-    quickTextMap.set("message", () => validateTextInField(detailQuickText.formMessage, quickTextJson.message))
-    quickTextMap.set("category", () => validateTextInField(detailQuickText.formCategory, quickTextJson.category))
-    quickTextMap.set("channel", () => validateTextInField(detailQuickText.formChannel, quickTextJson.finalChannel))
+    quickTextMap.set("name", () => cy.validateTextInField(detailQuickText.formName, quickTextJson.name))
+    quickTextMap.set("message", () => cy.validateTextInField(detailQuickText.formMessage, quickTextJson.message))
+    quickTextMap.set("category", () => cy.validateTextInField(detailQuickText.formCategory, quickTextJson.category))
+    quickTextMap.set("channel", () => cy.validateTextInField(detailQuickText.formChannel, quickTextJson.finalChannel))
     return quickTextMap
 }
 

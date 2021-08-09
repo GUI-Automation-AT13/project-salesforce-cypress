@@ -2,10 +2,12 @@ const endPoint = require('../../fixtures/endpoint/endpoint.json')
 const {pageTransporter} = require('../../src/salesforce/transporter')
 const quickText = require('../../src/salesforce/quickText/quickText')
 const {createQuickText} = require('../../src/salesforce/quickText/new-quicktext')
-const dataQuickText = require('../../fixtures/features/quicktext.json')
-const login = require("../../src/salesforce/api/login");
-const {getCurrentDate} = require('../../src/utils/formatDate')
 const {validateQuickText} = require("../../src/salesforce/quickText/validate-quicktext");
+const jsonDataQuickTextAllParams = require('../../fixtures/features/quicktext/all-params.json')
+const jsonDataQuickTextJustParamsRequired = require('../../fixtures/features/quicktext/params-required.json')
+const {login} = require("../../src/core/action");
+const apiLogin = require("../../src/salesforce/api/login");
+const {getCurrentDate} = require('../../src/utils/formatDate')
 const feature = require('../../src/salesforce/api/features')
 describe('test for feature Quick Text', () => {
     let idObject = ''
@@ -13,41 +15,40 @@ describe('test for feature Quick Text', () => {
     let actualDate = ''
     let originalName = ''
     before(async () => {
-        token = await login.login()
-        originalName = dataQuickText.name
+        token = await apiLogin.login()
+        originalName = jsonDataQuickTextAllParams.name
     })
     beforeEach(() => {
         actualDate = getCurrentDate()
-        dataQuickText.name = originalName + actualDate
         pageTransporter('/')
-        cy.login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
-        pageTransporter(endPoint.quicktext)
-        quickText.newQuickText()
+        login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
     })
     it('new quickText with only just parameters required', () => {
-        delete dataQuickText.relatedTo
-        delete dataQuickText.fieldOption
-        delete dataQuickText.category
-        delete dataQuickText.channel
-        createQuickText(dataQuickText)
-        validateQuickText(dataQuickText)
+        jsonDataQuickTextJustParamsRequired.name = originalName + actualDate
+        pageTransporter(endPoint.quicktext)
+        quickText.newQuickText()
+        createQuickText(jsonDataQuickTextJustParamsRequired)
+        validateQuickText(jsonDataQuickTextJustParamsRequired)
         // Obtain id of the new QuickText
         cy.location('pathname').then((url) => {
             idObject = url.substr(1)
             // Assert name in the home feature
             pageTransporter(endPoint.quicktext)
-            quickText.findNameFromTable(idObject).should('have.text', dataQuickText.name)
+            quickText.findNameFromTable(idObject).should('have.text', jsonDataQuickTextJustParamsRequired.name)
         })
     })
     it('new quickText with all parameters', () => {
-        createQuickText(dataQuickText)
-        validateQuickText(dataQuickText)
+        jsonDataQuickTextAllParams.name = originalName + actualDate
+        pageTransporter(endPoint.quicktext)
+        quickText.newQuickText()
+        createQuickText(jsonDataQuickTextAllParams)
+        validateQuickText(jsonDataQuickTextAllParams)
         // Obtain id of the new QuickText
         cy.location('pathname').then((url) => {
             idObject = url.substr(1)
             // Assert name in the home feature
             pageTransporter(endPoint.quicktext)
-            quickText.findNameFromTable(idObject).should('have.text', dataQuickText.name)
+            quickText.findNameFromTable(idObject).should('have.text', jsonDataQuickTextAllParams.name)
         })
     })
     afterEach(() => {
