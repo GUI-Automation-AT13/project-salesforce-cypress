@@ -1,7 +1,7 @@
-import {clickField, selectField, setField} from '../../core/action'
-import {getJsonEntityAttributes} from '../../core/entity-actions'
-import {iterateSetToRunMap} from '../../core/map-actions'
-const newContact = require("../../../fixtures/locator/contact/new-contact.json");
+import {clickField, selectField, setField} from '../action'
+import {getJsonEntityAttributes} from '../../../core/entity-actions'
+import {iterateSetToRunMap} from '../../../core/map-actions'
+const newContact = require("../../../../fixtures/locator/contact/new-contact.json");
 
 function setfunctioncontactMap(contactData) {
   const contactMap = new Map()

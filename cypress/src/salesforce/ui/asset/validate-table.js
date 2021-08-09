@@ -1,6 +1,6 @@
-import {getJsonEntityAttributes} from '../../core/entity-actions'
-import {iterateSetToRunMap} from '../../core/map-actions'
-const detailAsset = require('../../../fixtures/locator/asset/assets.json')
+import {getJsonEntityAttributes} from '../../../core/entity-actions'
+import {iterateSetToRunMap} from '../../../core/map-actions'
+const detailAsset = require('../../../../fixtures/locator/asset/assets.json')
 
 function setValidationAssetMap(asset, id) {
     const assetMap = new Map()

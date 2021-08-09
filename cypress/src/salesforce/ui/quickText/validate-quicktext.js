@@ -1,7 +1,7 @@
-const {getJsonEntityAttributes} = require('../../core/entity-actions')
-const {iterateSetToRunMap} = require('../../core/map-actions')
-const {validateTextInField} = require('../../core/action')
-const detailQuickText = require('../../../fixtures/locator/quickText/detail-quickText.json')
+const {getJsonEntityAttributes} = require('../../../core/entity-actions')
+const {iterateSetToRunMap} = require('../../../core/map-actions')
+const {validateTextInField} = require('../action')
+const detailQuickText = require('../../../../fixtures/locator/quicktext/detail-quicktext.json')
 
 function setValidationQuickTextMap(quickTextJson) {
     const quickTextMap = new Map()

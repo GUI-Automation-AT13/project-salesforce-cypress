@@ -1,9 +1,9 @@
-const contact = require("../../../fixtures/locator/contact/detail-contact.json");
-const detailContact = require("../../../fixtures/locator/contact/detail-contact.json");
-import {getJsonEntityAttributes} from '../../core/entity-actions'
-import {iterateSetToRunMap} from '../../core/map-actions'
-import {validateConteinTextInField} from '../../core/action'
-const {getCurrentDate} = require('../../utils/formatDate')
+const contact = require("../../../../fixtures/locator/contact/detail-contact.json");
+const detailContact = require("../../../../fixtures/locator/contact/detail-contact.json");
+import {getJsonEntityAttributes} from '../../../core/entity-actions'
+import {iterateSetToRunMap} from '../../../core/map-actions'
+import {validateConteinTextInField} from '../action'
+const {getCurrentDate} = require('../../../utils/formatDate')
 
 function setValidationContactMap(contactData) {
   const contactMap = new Map()
