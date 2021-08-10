@@ -28,5 +28,7 @@
     "otherCountry": "Bolivia",
     "language": "Spanish",
     "level": "Primary",
-    "description": "description"
+    "description": "description",
+    "accountName": "cuenta 14",
+    "reportsTo": "contact123"
 }

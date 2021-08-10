@@ -7,9 +7,9 @@ const contact = require("../../../../fixtures/locator/contact/contacts.json");
 const {dataTableToJson} = require('../../../../src/utils/convertToJson')
 import {createContact} from '../../../../src/salesforce/ui/contact/new-contact'
 import {login} from '../../../../src/salesforce/ui/action'
-import {validateContact , deleteContact} from '../../../../src/salesforce/ui/contact/detail-contact'
+import {validateContact} from '../../../../src/salesforce/ui/contact/detail-contact'
 
-let newObject;
+let newObject = '';
 
 Given(/^I login to salesforce site as an admin user$/, () => {
     pageTransporter('/')
@@ -28,5 +28,4 @@ When(/^I create a new Contact with fields$/, function (dataTable) {
 
 Then(/^I validate all fields$/, () => {
     validateContact(newObject)
-    // deleteContact()
 });
