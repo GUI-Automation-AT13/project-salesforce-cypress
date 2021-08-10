@@ -1,0 +1,117 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create Contact",
+    "line": 1,
+    "id": "create-contact",
+    "tags": [],
+    "uri": "contact.feature",
+    "elements": [
+      {
+        "id": "create-contact;create-a-contact-with-required-fields",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "create a contact with required fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 9250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I navigate to \"contact\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2817000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "salutation",
+                      "Dr."
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "firstName",
+                      "Contact"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "lastName",
+                      "lastname"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "title",
+                      "Title`"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "department",
+                      "Tarija"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I create a new Contact with fields",
+            "result": {
+              "status": "passed",
+              "duration": 7295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I validate all fields",
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I delete \"Contact\"",
+            "result": {
+              "status": "passed",
+              "duration": 391000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I navigate to \"contact\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2046000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

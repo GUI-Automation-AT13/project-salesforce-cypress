@@ -10,3 +10,5 @@ Feature: Create Contact
       | title             | Title`            |
       | department        | Tarija            |
     Then I validate all fields
+    And I delete "Contact"
+    And I navigate to "contact" page
