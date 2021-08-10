@@ -26,8 +26,8 @@ describe('Search asset', () => {
         }
         createRequisites(asset, token).then((ids) => {
             prerequisiteIds = ids
-            cy.wait(5000)
             pageTransporter(endpoint.asset)
+            cy.get('#00B5e00000CF06x_refresh').click()
             cy.get('#phSearchInput').type(wordToSearch)
             cy.get('#phSearchButton').click()
             cy.reload()
