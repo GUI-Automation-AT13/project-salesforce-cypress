@@ -69,7 +69,5 @@ describe('test for contact feature', () => {
         if (accountId !== '') {
             feature.deleteOne("Account", token, accountId)
         }
-        // feature.deleteOne("Contact", token, idObject)
-        // pageTransporter(endPoint.contact)
     })
 })
