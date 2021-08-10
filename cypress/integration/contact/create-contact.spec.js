@@ -7,11 +7,22 @@ const dataDuplicate = require('../../fixtures/features/contact/duplicate_record.
 const invalidData = require('../../fixtures/features/contact/invalid_data.json')
 const newContactJSON = require('../../fixtures/locator/contact/new-contact.json')
 const contact = require("../../fixtures/locator/contact/contacts.json");
+const apiLogin = require("../../src/salesforce/api/login")
+const feature = require('../../src/salesforce/api/features')
 import {createContact} from '../../src/salesforce/ui/contact/new-contact'
 import {login} from '../../src/salesforce/ui/action'
 import {validateContact} from '../../src/salesforce/ui/contact/detail-contact'
 
 describe('test for contact feature', () => {
+    let token = ''
+    let accountId = ''
+    let contactId = ''
+    let idObject = ''
+
+    before(async () => {
+        token = await apiLogin.login()
+    })
+
     beforeEach(() => {
         pageTransporter('/')
         login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
@@ -20,8 +31,25 @@ describe('test for contact feature', () => {
     })
 
     it('create contact with all fields', () => {
-        createContact(data)
-        validateContact(data)
+
+        const account = {
+            "Name": data.accountName
+        }
+        const repotToContact = {
+            "LastName": data.reportsTo
+        }
+        feature.create("Account", token, account).then((response) => {
+            accountId = response.body.id
+            feature.create("Contact", token, repotToContact).then((response2) => {
+                contactId = response2.body.id
+            })
+        }).then(() => {
+            createContact(data)
+            validateContact(data)
+            cy.location('pathname').then((url) => {
+                idObject = url.substr(1)
+            })
+        })
     });
 
     it('Validated Duplicate Record', () => {
@@ -29,8 +57,17 @@ describe('test for contact feature', () => {
         cy.valid_alert_field(newContactJSON.alertSelectorMessage, newContactJSON.alertMessage)
     });
 
-    it.only('Validated Invalida Data', () => {
+    it('Validated Invalida Data', () => {
         createContact(invalidData)
         cy.valid_alert_field(newContactJSON.alertSelectorInvalidData, newContactJSON.invalidDataMessage)
     });
+
+    after(() => {
+        if (contactId !== '') {
+            feature.deleteOne("Contact", token, contactId)
+        }
+        if (accountId !== '') {
+            feature.deleteOne("Account", token, accountId)
+        }
+    })
 })
