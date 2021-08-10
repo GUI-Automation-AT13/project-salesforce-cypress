@@ -43,3 +43,4 @@ Feature: Create Contact
     Then I validate all fields
     And I delete "Contact"
     And I navigate to "contact" page
+    
