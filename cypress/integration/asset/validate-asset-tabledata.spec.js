@@ -5,7 +5,6 @@ import {pageTransporter} from '../../src/salesforce/ui/transporter'
 import {setExpectedAssetJson} from '../../src/salesforce/ui/asset/validate-table';
 import {validateTableData} from '../../src/salesforce/ui/validate-tabledata'
 const apiLogin = require("../../src/salesforce/api/login")
-const feature = require('../../src/salesforce/api/features')
 const endpoint = require('../../fixtures/endpoint/endpoint.json')
 const requiredAsset = require('../../fixtures/features/asset/all-table-attributes.json')
 

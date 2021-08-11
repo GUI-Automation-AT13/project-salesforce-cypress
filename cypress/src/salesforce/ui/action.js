@@ -45,3 +45,10 @@ export function search(wordToSearch) {
     cy.get('#phSearchInput').type(wordToSearch)
     cy.get('#phSearchButton').click()
 }
+
+export function goBackToAssetTable() {
+    cy.get('.allTabsArrow').click()
+    cy.get('.dataCol.assetBlock > .listRelatedObject').click()
+    cy.get('.fBody > .btn').click()
+    refreshTable()
+}

@@ -28,7 +28,7 @@ export function setExpectedAssetJson(asset) {
     if (asset.AccountId !== undefined) {
         expectedData["Account Name"] = asset.AccountId
     }
-    if (asset.Name !== undefined) {
+    if (asset.Name !== undefined || asset.name !== undefined) {
         expectedData["Asset Name"] = asset.Name
     }
     if (asset.ContactId !== undefined) {
@@ -40,5 +40,49 @@ export function setExpectedAssetJson(asset) {
     if (asset.SerialNumber !== undefined) {
         expectedData["Serial Number"] = asset.SerialNumber
     }
+    return expectedData
+}
+
+export function setExpectedAssetJsonFromUi(asset) {
+    const expectedData = {}
+    const entryAttributes =
+    [
+        [
+            "account",
+            "Account Name"
+        ],
+        [
+            "contact",
+            "Contact Name"
+        ],
+        [
+            "install date",
+            "Install Date"
+        ],
+        [
+            "name",
+            "Asset Name"
+        ],
+        [
+            "product",
+            "Product Name"
+        ],
+        [
+            "serial number",
+            "Serial Number"
+        ]
+    ]
+
+    for (const attribute of entryAttributes) {
+        if (asset[attribute[0]] === undefined) {
+            expectedData[attribute[1]] = ' '
+            if (attribute[0] === "serial number") {
+                expectedData[attribute[1]] = '_'
+            }
+        } else {
+            expectedData[attribute[1]] = asset[attribute[0]]
+        }
+    }
+
     return expectedData
 }
