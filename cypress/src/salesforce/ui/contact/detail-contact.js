@@ -1,8 +1,6 @@
-const contact = require("../../../../fixtures/locator/contact/detail-contact.json");
 const detailContact = require("../../../../fixtures/locator/contact/detail-contact.json");
 import {getJsonEntityAttributes} from '../../../core/entity-actions'
 import {iterateSetToRunMap} from '../../../core/map-actions'
-import {validateConteinTextInField} from '../action'
 const {getCurrentDate} = require('../../../utils/formatDate')
 const {createContactName} = require('../../../utils/formContactName')
 
@@ -17,13 +15,8 @@ function setValidationContactMap(contactData) {
   return contactMap
 }
 
-export function validateContact(Contact) {
-  const contactMap = setValidationContactMap(Contact)
-  const ContactSet = getJsonEntityAttributes(Contact)
+export function validateContact(contactData) {
+  const contactMap = setValidationContactMap(contactData)
+  const ContactSet = getJsonEntityAttributes(contactData)
   iterateSetToRunMap(contactMap, ContactSet)
 }
-
-export function deleteContact() {
-  cy.clickField(detailContact.deleteBtn)
-}
-

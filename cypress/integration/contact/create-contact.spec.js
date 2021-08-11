@@ -17,7 +17,6 @@ describe('test for contact feature', () => {
     let token = ''
     let accountId = ''
     let contactId = ''
-    let idObject = ''
 
     before(async () => {
         token = await apiLogin.login()
@@ -30,7 +29,7 @@ describe('test for contact feature', () => {
         cy.clickField(contact.newContactBtn)
     })
 
-    it('create contact with all fields', () => {
+    it.only('create contact with all fields', () => {
 
         const account = {
             "Name": data.accountName
@@ -46,9 +45,6 @@ describe('test for contact feature', () => {
         }).then(() => {
             createContact(data)
             validateContact(data)
-            cy.location('pathname').then((url) => {
-                idObject = url.substr(1)
-            })
         })
     });
 
