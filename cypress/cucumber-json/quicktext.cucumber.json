@@ -1,0 +1,370 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create QuickText",
+    "line": 1,
+    "id": "create-quicktext",
+    "tags": [],
+    "uri": "quicktext.feature",
+    "elements": [
+      {
+        "id": "create-quicktext;create-a-quicktext-with-required-fields",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "create a quickText with required fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 10525000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I navigate to \"quicktext\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1631000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "cucumber quick text name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "message",
+                      "message quick  text"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I create a new QuickText with fields",
+            "result": {
+              "status": "passed",
+              "duration": 5528000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I validate all fields",
+            "result": {
+              "status": "passed",
+              "duration": 963000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-quicktext;create-a-quicktext-with-all-params",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "create a quickText with all params",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 5248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I navigate to \"quicktext\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1037000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "cucumber quick text name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "message",
+                      "message quick  text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "relatedTo",
+                      "Account Fields"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "fieldOption",
+                      "Account Number"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "category",
+                      "FAQ"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "channel",
+                      "Phone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "finalChannel",
+                      "Email; Phone"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I create a new QuickText with fields",
+            "result": {
+              "status": "passed",
+              "duration": 7590000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I validate all fields",
+            "result": {
+              "status": "passed",
+              "duration": 2010000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-quicktext;create-a-quicktext-with-all-params",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "create a quickText with all params",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 9059000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I navigate to \"quicktext\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1703000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "quick text name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "message",
+                      "message quick  text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "relatedTo",
+                      "Account Fields"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "fieldOption",
+                      "Account Number"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "category",
+                      "FAQ"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "channel",
+                      "Phone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "finalChannel",
+                      "Email; Phone"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I create a new QuickText with fields",
+            "result": {
+              "status": "passed",
+              "duration": 18931000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "I validate all fields",
+            "result": {
+              "status": "passed",
+              "duration": 1351000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-quicktext;create-a-quicktext-with-all-params",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "create a quickText with all params",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 7670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I navigate to \"quicktext\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1285000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "quick text name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "message",
+                      "message quick  text"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "relatedTo",
+                      "Case Fields"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "fieldOption",
+                      "Closed"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "category",
+                      "FAQ"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "channel",
+                      "Event"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "finalChannel",
+                      "Email; Event"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I create a new QuickText with fields",
+            "result": {
+              "status": "passed",
+              "duration": 7647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "I validate all fields",
+            "result": {
+              "status": "passed",
+              "duration": 1202000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

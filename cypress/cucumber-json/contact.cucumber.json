@@ -22,7 +22,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 17426000000
+              "duration": 21747000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 2151000000
+              "duration": 4017000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I create a new Contact with fields",
             "result": {
               "status": "passed",
-              "duration": 5797000000
+              "duration": 10507000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 328000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I delete \"Contact\"",
             "result": {
               "status": "passed",
-              "duration": 420000000
+              "duration": 622000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 1505000000
+              "duration": 2519000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 6841000000
+              "duration": 11922000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 1397000000
+              "duration": 2058000000
             }
           },
           {
@@ -290,7 +290,7 @@
             "name": "I create a new Contact with fields",
             "result": {
               "status": "passed",
-              "duration": 16965000000
+              "duration": 17069000000
             }
           },
           {
@@ -300,7 +300,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 15000000
             }
           },
           {
@@ -310,7 +310,7 @@
             "name": "I delete \"Contact\"",
             "result": {
               "status": "passed",
-              "duration": 463000000
+              "duration": 341000000
             }
           },
           {
@@ -320,7 +320,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 1371000000
+              "duration": 1346000000
             }
           }
         ]
