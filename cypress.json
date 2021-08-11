@@ -1,5 +1,4 @@
 {
-  "baseUrl" : "https://jpcorp-dev-ed.my.salesforce.com",
   "env": {
     "API_LOGIN": "https://login.salesforce.com/services/oauth2/token",
     "API_FEATURES": "/services/data/v51.0/sobjects/"
