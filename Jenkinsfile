@@ -17,9 +17,9 @@ pipeline {
                         git url: 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
                         sh 'echo JOEL A MANO CAMBIADA'
                         sh 'echo ${BASE_URL} '
-                        bat 'npm install'
-                        bat 'npm update'                       
-                        bat '${BASE_URL} npx cypress run cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9  --parallel'
+                        sh 'npm install'
+                        sh 'npm update'                       
+                        sh '${BASE_URL} npx cypress run cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9  --parallel'
                     
                     }
                 }
@@ -30,9 +30,9 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
-                        bat 'npm install'
-                        bat 'npm update'                       
-                        bat '${BASE_URL} npx cypress run cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9  --parallel'
+                        sh 'npm install'
+                        sh 'npm update'                       
+                        sh '${BASE_URL} npx cypress run cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9  --parallel'
                     
                     }
                 }
@@ -43,9 +43,9 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
-                        bat 'npm install'
-                        bat 'npm update'                       
-                        bat '${BASE_URL} npx cypress run cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9  --parallel'
+                        sh 'npm install'
+                        sh 'npm update'                       
+                        sh '${BASE_URL} npx cypress run cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9  --parallel'
                     
                     }
                 }
