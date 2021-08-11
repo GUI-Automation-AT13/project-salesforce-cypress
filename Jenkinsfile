@@ -15,7 +15,7 @@ pipeline {
                     }
                     steps {
                         git url: 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
-                        sh 'echo JOEL A MANO CAMBIADA'
+                        sh 'echo BASE URL'
                         sh 'echo ${baseUrl} '
                         sh 'npm install'
                         sh 'npm update'                       
