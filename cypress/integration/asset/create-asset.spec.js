@@ -1,5 +1,7 @@
+import {clickField, login} from '../../src/salesforce/ui/action'
+import {createAssetRequisites, setAssetPreRequest} from '../../src/salesforce/api/asset/create-requisites'
 import {createAsset} from '../../src/salesforce/ui/asset/new-asset'
-import {login} from '../../src/salesforce/ui/action'
+import {deleteAsset} from '../../src/salesforce/api/asset/delete-requisites'
 import {pageTransporter} from '../../src/salesforce/ui/transporter'
 import {validateAsset} from '../../src/salesforce/ui/asset/validate-asset'
 const endpoint = require('../../fixtures/endpoint/endpoint.json')
@@ -13,9 +15,8 @@ const necessaryAttrAsset = require('../../fixtures/features/asset/necessary-attr
 describe('Create an Asset', () => {
 
     let token = ''
-    let accountId = ''
-    let contactId = ''
-    let productId = ''
+    let ids = {}
+
     before(async () => {
         token = await apiLogin.login()
     })
@@ -24,60 +25,31 @@ describe('Create an Asset', () => {
         pageTransporter("/")
         login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'))
         pageTransporter(endpoint.asset)
-        cy.clickField(assets.newAssetBtn)
     })
 
     it('should create it with necessary attributes', () => {
-        const asset = necessaryAttrAsset
-        const account = {
-            "Name": asset.account
-        }
-        feature.create("Account", token, account).then((response) => {
-            accountId = response.body.id
-        }).then(() => {
-        createAsset(asset)
+        clickField(assets.newAssetBtn)
 
-        validateAsset(asset)
-        })
+        const asset = setAssetPreRequest(necessaryAttrAsset)
+        ids = createAssetRequisites(token, asset)
+
+        createAsset(necessaryAttrAsset)
+
+        validateAsset(necessaryAttrAsset)
     })
 
     it('should create it with all attributes', () => {
-        const asset = allAttrAsset
-        const account = {
-            "Name": asset.account
-        }
-        const product = {
-            "Name": asset.product
-        }
-        feature.create("Account", token, account).then((response) => {
-            accountId = response.body.id
-            const contact = {
-                "LastName": asset.contact,
-                "AccountId": accountId
-            }
-            feature.create("Contact", token, contact).then((response2) => {
-                contactId = response2.body.id
-            })
-            feature.create("Product2", token, product).then((response3) => {
-                productId = response3.body.id
-            })
-        }).then(() => {
+        clickField(assets.newAssetBtn)
 
-        createAsset(asset)
+        const asset = setAssetPreRequest(allAttrAsset)
+        ids = createAssetRequisites(token, asset)
 
-        validateAsset(asset)
-        })
+        createAsset(allAttrAsset)
+
+        validateAsset(allAttrAsset)
     })
 
     afterEach(() => {
-        if (contactId !== '') {
-            feature.deleteOne("Contact", token, contactId)
-        }
-        if (accountId !== '') {
-            feature.deleteOne("Account", token, accountId)
-        }
-        if (productId !== '') {
-            feature.deleteOne("Product2", token, productId)
-        }
+        deleteAsset(token, ids)
     })
 })
