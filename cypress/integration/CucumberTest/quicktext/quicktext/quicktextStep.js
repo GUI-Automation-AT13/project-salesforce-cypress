@@ -10,7 +10,7 @@ const {validateQuickText} = require('../../../../src/salesforce/ui/quickText/val
 const quickText = require('../../../../src/salesforce/ui/quickText/quickText')
 const {deleteQuickText} = require('../../../../src/salesforce/api/quicktext/delete-quicktext')
 
-let newObject;
+let newObject = '';
 
 Given(/^I login to salesforce site as an admin user$/, async () => {
     pageTransporter('/')

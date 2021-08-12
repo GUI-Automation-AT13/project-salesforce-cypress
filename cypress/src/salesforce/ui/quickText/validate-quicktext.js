@@ -1,6 +1,5 @@
 const {getJsonEntityAttributes} = require('../../../core/entity-actions')
 const {iterateSetToRunMap} = require('../../../core/map-actions')
-const {validateTextInField} = require('../action')
 const detailQuickText = require('../../../../fixtures/locator/quicktext/detail-quicktext.json')
 
 function setValidationQuickTextMap(quickTextJson) {
@@ -16,4 +15,14 @@ export function validateQuickText(quickTextJson) {
     const quickTextMap = setValidationQuickTextMap(quickTextJson)
     const quickTextSet = getJsonEntityAttributes(quickTextJson)
     iterateSetToRunMap(quickTextMap, quickTextSet)
+}
+
+export function formJsonExpected(quickTextJson) {
+    return {
+        "Quick Text Name": quickTextJson.name,
+        "Message": quickTextJson.message,
+        "Category": quickTextJson.category || "Greetings",
+        "Channel": quickTextJson.finalChannel || "Email",
+        "Include in selected channels": ""
+    }
 }
