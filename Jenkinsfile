@@ -15,49 +15,32 @@ pipeline {
                     }
                     steps {
                         git 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
-                        sh 'echo BASE URL'
-                        sh 'echo $baseUrl'
-                        sh 'npm install'
-                        sh 'npm update'
-                        sh 'npx cypress run'                        
-                        sh 'npx cypress run --config baseUrl=false --headless --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
-                    
+                        sh 'npm install'                    
+                        sh 'npx cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     }
                 }
-
                 stage('Slave 2') {
                     agent {
                         label "Agent2_2"
                     }
                     steps {
                         git 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
-                        sh 'npm install'
-                        sh 'npm update'
-                        sh 'npx cypress run-ct'                        
+                        sh 'npm install'               
                         sh 'npx cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     
                     }
                 }
-
                 stage('Slave 3') {
                     agent {
                         label "Agent2_3"
                     }
                     steps {
                         git 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
-                        sh 'npm install'
-                        sh 'npm update'      
-                        sh 'npx cypress run --config baseUrl=false'                 
-                        sh 'npx cypress run --config baseUrl=false --headless --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
-                    
+                        sh 'npm install'               
+                        sh 'npx cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'   
                     }
-                }
-                  
-            }
-
-             
+                }                  
+            }             
         }
-
-    }
-            
+    }           
 }
