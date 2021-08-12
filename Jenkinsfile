@@ -18,7 +18,8 @@ pipeline {
                         sh 'echo BASE URL'
                         sh 'echo $baseUrl'
                         sh 'npm install'
-                        sh 'npm update'                       
+                        sh 'npm update'
+                        sh 'npx cypress run'                        
                         sh 'npx cypress run --config baseUrl=false --headless --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     
                     }
@@ -31,7 +32,8 @@ pipeline {
                     steps {
                         git 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
                         sh 'npm install'
-                        sh 'npm update'                       
+                        sh 'npm update'
+                        sh 'npx cypress run-ct'                        
                         sh 'npx cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     
                     }
@@ -44,8 +46,9 @@ pipeline {
                     steps {
                         git 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
                         sh 'npm install'
-                        sh 'npm update'                       
-                        sh 'npx cypress run --config baseUrl=false  --headless --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
+                        sh 'npm update'      
+                        sh 'npx cypress run --config baseUrl=false'                 
+                        sh 'npx cypress run --config baseUrl=false --headless --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     
                     }
                 }
