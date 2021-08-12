@@ -6,22 +6,20 @@ report.generate({
 	metadata:{
         browser: {
             name: 'chrome',
-            version: '60'
+            version: '92'
         },
         device: 'Local test machine',
         platform: {
-            name: 'ubuntu',
-            version: '16.04'
+            name: 'windows',
+            version: '10'
         }
     },
     customData: {
         title: 'Run info',
         data: [
-            {label: 'Project', value: 'Custom project'},
-            {label: 'Release', value: '1.2.3'},
-            {label: 'Cycle', value: 'B11221.34321'},
-            {label: 'Execution Start Time', value: 'Nov 19th 2017, 02:31 PM EST'},
-            {label: 'Execution End Time', value: 'Nov 19th 2017, 02:56 PM EST'}
+            {label: 'Project', value: 'Cypress project'},
+            {label: 'Execution Start Time', value: 'Agu 11th 2021, 02:31 PM'},
+            {label: 'Execution End Time', value: 'Agu 11th 2021, 02:33 PM'}
         ]
     }
 });

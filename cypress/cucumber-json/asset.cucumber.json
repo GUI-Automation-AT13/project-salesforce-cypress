@@ -1,0 +1,207 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create Asset",
+    "line": 1,
+    "id": "create-asset",
+    "tags": [],
+    "uri": "asset.feature",
+    "elements": [
+      {
+        "id": "create-asset;create-a-asset-with-required-fields",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "create a asset with required fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 6781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I navigate to \"asset\" page",
+            "result": {
+              "status": "passed",
+              "duration": 12699000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "New Asset"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I create a new Asset with fields",
+            "result": {
+              "status": "passed",
+              "duration": 4475000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I validate all fields",
+            "result": {
+              "status": "failed",
+              "duration": 4101000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#Name_ileinner`, but never found it.\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\support\\index.js:17:20)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-asset;create-an-asset-with-all-fields",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "create an asset with all fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 21771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I navigate to \"asset\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2469000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "cuenta 14"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "serial number",
+                      "Serial Number"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "install date",
+                      "28/7/2021"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "purchase date",
+                      "15/8/2021"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "usage end date",
+                      "30/9/2021"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "quantity",
+                      "10,00"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "price",
+                      "100"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "description",
+                      "Description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "status",
+                      "Shipped"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "competitor",
+                      "true"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "account",
+                      "cuenta 14"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "product",
+                      "producto 12"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "contact",
+                      "contact123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I create a new Asset with fields",
+            "result": {
+              "status": "passed",
+              "duration": 13066000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I validate all fields",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#Name_ileinner`, but never found it.\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\support\\index.js:17:20)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

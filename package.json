@@ -7,7 +7,8 @@
     "start": "cypress open",
     "test": "node_modules/.bin/cypress run",
     "checkstyle": "node_modules/.bin/eslint cypress",
-    "cy:run": "node ./scripts/cypress.js"
+    "cy:run": "node ./scripts/cypress.js",
+    "cy:run_browser": "npm cypress run --browser chrome & npx cypress run --browser edge & npx cypress run --browser firefox"
   },
   "keywords": [],
   "author": "",

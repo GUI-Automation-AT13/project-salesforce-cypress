@@ -10,8 +10,10 @@ describe('Search asset', () => {
     let token = ''
     let prerequisiteIds = {}
 
-    before(async () => {
-        token = await apiLogin.login()
+    before(() => {
+        apiLogin.login().then((result) => {
+            token = result.body.access_token
+        })
     })
 
     beforeEach('navigate to salesforce login page', () => {
@@ -23,7 +25,6 @@ describe('Search asset', () => {
         const wordToSearch = requiredAsset.Name
         prerequisiteIds = createAssetRequisites(token, requiredAsset)
         createEntity("Asset", token, requiredAsset)
-
         search(wordToSearch)
 
         validateResults()

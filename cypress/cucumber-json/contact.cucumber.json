@@ -22,7 +22,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 9250000000
+              "duration": 17897000000
             }
           },
           {
@@ -32,7 +32,88 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 2817000000
+              "duration": 2767000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "lastName",
+                      "lastnameTest1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I create a new Contact with fields",
+            "result": {
+              "status": "passed",
+              "duration": 4331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I validate all fields",
+            "result": {
+              "status": "passed",
+              "duration": 295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I delete \"Contact\"",
+            "result": {
+              "status": "passed",
+              "duration": 401000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I navigate to \"contact\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2169000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-contact;create-a-contact-with-all-fields",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "create a contact with all fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I login to salesforce site as an admin user",
+            "result": {
+              "status": "passed",
+              "duration": 6692000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I navigate to \"contact\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1057000000
             }
           },
           {
@@ -48,19 +129,19 @@
                   {
                     "cells": [
                       "firstName",
-                      "Contact"
+                      "Test"
                     ]
                   },
                   {
                     "cells": [
                       "lastName",
-                      "lastname"
+                      "lastnameTest2"
                     ]
                   },
                   {
                     "cells": [
                       "title",
-                      "Title`"
+                      "TitleTest"
                     ]
                   },
                   {
@@ -68,46 +149,178 @@
                       "department",
                       "Tarija"
                     ]
+                  },
+                  {
+                    "cells": [
+                      "birthdate",
+                      "19/7/2021"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "phone",
+                      "1789654"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "homePhone",
+                      "1789654"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mobile",
+                      "1789654"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "otherPhone",
+                      "1789654"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "fax",
+                      "1789654"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "test@gmail.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "assistantName",
+                      "AssistantName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "assistantPhone",
+                      "1789654"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mailingStreet",
+                      "Ballivian"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mailingPostalCode",
+                      "Ballivian"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mailingCity",
+                      "Cochabamba"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mailingState",
+                      "Cercado"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mailingCountry",
+                      "Bolivia"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "otherStreet",
+                      "Junin"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "otherPostalCode",
+                      "Junin"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "otherCity",
+                      "Tarija"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "otherState",
+                      "Cercado"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "otherCountry",
+                      "Bolivia"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "language",
+                      "Spanish"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "level",
+                      "Primary"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "description",
+                      "good test"
+                    ]
                   }
                 ]
               }
             ],
             "keyword": "When ",
-            "line": 6,
+            "line": 15,
             "name": "I create a new Contact with fields",
             "result": {
               "status": "passed",
-              "duration": 7295000000
+              "duration": 14183000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 43,
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 47000000
+              "duration": 482000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 44,
             "name": "I delete \"Contact\"",
             "result": {
               "status": "passed",
-              "duration": 391000000
+              "duration": 401000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 14,
+            "line": 45,
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 2046000000
+              "duration": 978000000
             }
           }
         ]
