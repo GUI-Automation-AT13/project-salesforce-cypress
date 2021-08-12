@@ -1,7 +1,10 @@
 const apiLogin = require("../../../../src/salesforce/api/login")
 let token = ''
-before(async () => {
-    token = await apiLogin.login()
+before(() => {
+    apiLogin.login().then((result) => {
+        token = result.body.access_token
+    })
 })
+
 
  export {token}

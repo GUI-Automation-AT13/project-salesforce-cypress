@@ -22,7 +22,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 8269000000
+              "duration": 17897000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 6175000000
+              "duration": 2767000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I create a new Contact with fields",
             "result": {
               "status": "passed",
-              "duration": 9801000000
+              "duration": 4331000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 295000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I delete \"Contact\"",
             "result": {
               "status": "passed",
-              "duration": 454000000
+              "duration": 401000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 1744000000
+              "duration": 2169000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 10536000000
+              "duration": 6692000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "I navigate to \"contact\" page",
             "result": {
               "status": "passed",
-              "duration": 1834000000
+              "duration": 1057000000
             }
           },
           {
@@ -289,9 +289,8 @@
             "line": 15,
             "name": "I create a new Contact with fields",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "CypressError: `cy.select()` failed because this element is currently disabled:\n\n`<select id=\"name_salutationcon2\" name=\"name_salutationcon2\" tabindex=\"1\">...</select>`\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:138656:23\nFrom previous event:\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:138641:12\nFrom previous event:\n    at Context.select (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:138622:40)\n    at Context.<anonymous> (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:156250:21)\nFrom Your Spec Code:\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\support\\index.js:14:41)"
+              "status": "passed",
+              "duration": 14183000000
             }
           },
           {
@@ -300,7 +299,8 @@
             "line": 43,
             "name": "I validate all fields",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 482000000
             }
           },
           {
@@ -309,7 +309,8 @@
             "line": 44,
             "name": "I delete \"Contact\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 401000000
             }
           },
           {
@@ -318,7 +319,8 @@
             "line": 45,
             "name": "I navigate to \"contact\" page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 978000000
             }
           }
         ]

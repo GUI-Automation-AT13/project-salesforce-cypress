@@ -1,0 +1,38 @@
+{
+   "lambdatest_auth": {
+      "username": "juampi7237",
+      "access_key": "jCRnTYadkTv1uJLw7rOdGmUcbPDHGt5n0sJCA2Cj97X7yDmWFr"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "86.0"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "82.0"
+         ]
+      }
+   ],
+   "run_settings": {
+      "cypress_config_file": "cypress.json",
+      "build_name": "cypress-salesforce",
+      "parallels": 4,
+      "specs": "./cypress/integration/*",
+      "ignore_files": "",
+      "npm_dependencies": {
+         "cypress": "8.1.0"
+      },
+      "feature_file_suppport": false,
+      "network": false
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}

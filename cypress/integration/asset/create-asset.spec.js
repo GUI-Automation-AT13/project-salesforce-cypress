@@ -17,8 +17,10 @@ describe('Create an Asset', () => {
     let token = ''
     let ids = {}
 
-    before(async () => {
-        token = await apiLogin.login()
+    before(() => {
+        apiLogin.login().then((result) => {
+            token = result.body.access_token
+        })
     })
 
     beforeEach('navigate to salesforce login page', () => {

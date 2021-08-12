@@ -3,6 +3,8 @@ import {createAsset} from "../../../../src/salesforce/ui/asset/new-asset";
 import {dataTableToJson} from "../../../../src/utils/convertToJson";
 import {pageTransporter} from "../../../../src/salesforce/ui/transporter";
 import {validateAsset} from "../../../../src/salesforce/ui/asset/validate-asset";
+const endPoint = require('../../../../fixtures/endpoint/endpoint.json')
+const assets = require('../../../../fixtures/locator/asset/assets.json')
 
 let newObject = {};
 

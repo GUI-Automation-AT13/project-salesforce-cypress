@@ -18,8 +18,10 @@ describe('test for contact feature', () => {
     let accountId = ''
     let contactId = ''
 
-    before(async () => {
-        token = await apiLogin.login()
+    before(() => {
+        apiLogin.login().then((result) => {
+            token = result.body.access_token
+        })
     })
 
     beforeEach(() => {
@@ -29,7 +31,7 @@ describe('test for contact feature', () => {
         cy.clickField(contact.newContactBtn)
     })
 
-    it('create contact with all fields', () => {
+    it.only('create contact with all fields', () => {
 
         const account = {
             "Name": data.accountName

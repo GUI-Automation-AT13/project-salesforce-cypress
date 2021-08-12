@@ -22,7 +22,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 7908000000
+              "duration": 22789000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 4681000000
+              "duration": 7863000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 13403000000
+              "duration": 5537000000
             }
           },
           {
@@ -68,8 +68,9 @@
             "line": 9,
             "name": "I validate all fields",
             "result": {
-              "status": "passed",
-              "duration": 3164000000
+              "status": "failed",
+              "duration": 168000000,
+              "error_message": "TypeError: apiLogin.asyncLogin is not a function\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\integration\\CucumberTest\\quicktext\\quicktext.feature:272:14)\nFrom previous event:\n    at Context.thenFn (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:140660:23)\n    at Context.then (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:141112:21)\n    at Context.<anonymous> (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:156250:21)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155658:15\nFrom previous event:\n    at runCommand (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155637:8)\n    at next (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155783:14)\nFrom previous event:\n    at next (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155783:34)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155811:16"
             }
           }
         ]
@@ -89,7 +90,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 27161000000
+              "duration": 7173000000
             }
           },
           {
@@ -99,7 +100,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 8797000000
+              "duration": 1328000000
             }
           },
           {
@@ -156,7 +157,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 39757000000
+              "duration": 8960000000
             }
           },
           {
@@ -165,8 +166,8 @@
             "line": 22,
             "name": "I validate all fields",
             "result": {
-              "status": "passed",
-              "duration": 3330000000
+              "status": "failed",
+              "error_message": "TypeError: apiLogin.asyncLogin is not a function\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\integration\\CucumberTest\\quicktext\\quicktext.feature:272:14)\nFrom previous event:\n    at Context.thenFn (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:140660:23)\n    at Context.then (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:141112:21)\n    at Context.<anonymous> (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:156250:21)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155658:15\nFrom previous event:\n    at runCommand (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155637:8)\n    at next (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155783:14)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155811:16"
             }
           }
         ]
@@ -186,7 +187,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 20669000000
+              "duration": 17351000000
             }
           },
           {
@@ -196,7 +197,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 4521000000
+              "duration": 2010000000
             }
           },
           {
@@ -253,7 +254,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 32083000000
+              "duration": 9618000000
             }
           },
           {
@@ -262,8 +263,8 @@
             "line": 35,
             "name": "I validate all fields",
             "result": {
-              "status": "passed",
-              "duration": 3013000000
+              "status": "failed",
+              "error_message": "TypeError: apiLogin.asyncLogin is not a function\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\integration\\CucumberTest\\quicktext\\quicktext.feature:272:14)\nFrom previous event:\n    at Context.thenFn (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:140660:23)\n    at Context.then (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:141112:21)\n    at Context.<anonymous> (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:156250:21)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155658:15\nFrom previous event:\n    at runCommand (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155637:8)\n    at next (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155783:14)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155811:16"
             }
           }
         ]
@@ -283,7 +284,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 16135000000
+              "duration": 7871000000
             }
           },
           {
@@ -293,7 +294,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 6948000000
+              "duration": 1319000000
             }
           },
           {
@@ -350,7 +351,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 25646000000
+              "duration": 10865000000
             }
           },
           {
@@ -359,8 +360,8 @@
             "line": 35,
             "name": "I validate all fields",
             "result": {
-              "status": "passed",
-              "duration": 3522000000
+              "status": "failed",
+              "error_message": "TypeError: apiLogin.asyncLogin is not a function\n    at Context.eval (https://jpcorp-dev-ed.my.salesforce.com/__cypress/tests?p=cypress\\integration\\CucumberTest\\quicktext\\quicktext.feature:272:14)\nFrom previous event:\n    at Context.thenFn (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:140660:23)\n    at Context.then (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:141112:21)\n    at Context.<anonymous> (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:156250:21)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155658:15\nFrom previous event:\n    at runCommand (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155637:8)\n    at next (https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155783:14)\n    at https://jpcorp-dev-ed.my.salesforce.com/__cypress/runner/cypress_runner.js:155811:16"
             }
           }
         ]

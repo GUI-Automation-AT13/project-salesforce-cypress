@@ -13,9 +13,12 @@ describe('Validate the information of an Asset from a table', () => {
     let token = ''
     let prerequisiteIds = {}
 
-    before(async () => {
-        token = await apiLogin.login()
+    before(() => {
+        apiLogin.login().then((result) => {
+            token = result.body.access_token
+        })
     })
+
 
     beforeEach('navigate to salesforce login page', () => {
         pageTransporter("/")
