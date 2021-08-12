@@ -22,7 +22,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 10525000000
+              "duration": 7908000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 1631000000
+              "duration": 4681000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 5528000000
+              "duration": 13403000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 963000000
+              "duration": 3164000000
             }
           }
         ]
@@ -89,7 +89,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 5248000000
+              "duration": 27161000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 1037000000
+              "duration": 8797000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 7590000000
+              "duration": 39757000000
             }
           },
           {
@@ -166,7 +166,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 2010000000
+              "duration": 3330000000
             }
           }
         ]
@@ -186,7 +186,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 9059000000
+              "duration": 20669000000
             }
           },
           {
@@ -196,7 +196,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 1703000000
+              "duration": 4521000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 18931000000
+              "duration": 32083000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 1351000000
+              "duration": 3013000000
             }
           }
         ]
@@ -283,7 +283,7 @@
             "name": "I login to salesforce site as an admin user",
             "result": {
               "status": "passed",
-              "duration": 7670000000
+              "duration": 16135000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "I navigate to \"quicktext\" page",
             "result": {
               "status": "passed",
-              "duration": 1285000000
+              "duration": 6948000000
             }
           },
           {
@@ -350,7 +350,7 @@
             "name": "I create a new QuickText with fields",
             "result": {
               "status": "passed",
-              "duration": 7647000000
+              "duration": 25646000000
             }
           },
           {
@@ -360,7 +360,7 @@
             "name": "I validate all fields",
             "result": {
               "status": "passed",
-              "duration": 1202000000
+              "duration": 3522000000
             }
           }
         ]
