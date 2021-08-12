@@ -13,11 +13,6 @@ const options = {
         "username": Cypress.env('USERNAME')
     }
 }
-export async function login() {
-    const result = await cy.request(options)
-    return result.body.access_token
-}
-
-export function asyncLogin() {
+export function login() {
     return cy.request(options)
 }

@@ -2,7 +2,7 @@ export function validateTableData(requiredAttr) {
     let titles = {}
     let data = {}
     const actualData = {}
-    return cy.get('div.x-grid3-cell-inner > a').contains(requiredAttr).parents('.x-grid3-row-table tr').then((element) => {
+    return cy.get('div.x-grid3-cell-inner > a').should("be.visible").contains(requiredAttr).parents('.x-grid3-row-table tr').then((element) => {
         data = element['0'].childNodes
     }).then(() => {
         cy.get('.x-grid3-hd-row').then((element) => {
