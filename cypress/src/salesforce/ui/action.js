@@ -5,3 +5,7 @@ cy.fixture("locator/login").then((loginData) => {
         cy.get(loginData.loginBtn).should('be.visible').click()
     })
 }
+
+export function obtainId () {
+    return cy.location('pathname')
+}
