@@ -5,3 +5,4 @@ cypress/screenshots/
 cypress/videos/
 mochawesome-report/
 reports
+cypress/cucumber-json/

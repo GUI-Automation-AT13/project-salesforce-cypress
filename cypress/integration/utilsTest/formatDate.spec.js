@@ -1,5 +1,5 @@
 const chai = require("chai");
-const {getCurrentDate} = require("../../src/utils/formatDate");
+const {getCurrentDate} = require("../../support/utils/formatDate");
 
 describe("Unit test for formatDate", () => {
   const currentDate = new Date();

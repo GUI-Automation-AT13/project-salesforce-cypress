@@ -1,7 +1,7 @@
 import {clickField, selectField, setField} from '../action'
-import {getJsonEntityAttributes} from '../../../core/entity-actions'
-import {iterateSetToRunMap} from '../../../core/map-actions'
-const newAsset = require('../../../../fixtures/locator/asset/new-asset.json')
+import {getJsonEntityAttributes} from '../../../support/utils/entity-actions'
+import {iterateSetToRunMap} from '../../../support/utils/map-actions'
+const newAsset = require('../../../fixtures/locator/asset/new-asset.json')
 
 function setfunctionAssetMap(asset) {
     const assetMap = new Map()

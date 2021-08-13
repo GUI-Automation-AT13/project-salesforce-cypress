@@ -1,9 +1,9 @@
-import {createAssetRequisites, createEntity} from '../../src/salesforce/api/asset/create-requisites';
-import {login, search} from '../../src/salesforce/ui/action'
-import {deleteAsset} from '../../src/salesforce/api/asset/delete-requisites';
-import {pageTransporter} from '../../src/salesforce/ui/transporter'
-import {validateResults} from '../../src/salesforce/ui/validate-searh-results';
-const apiLogin = require("../../src/salesforce/api/login")
+import {createAssetRequisites, createEntity} from '../../salesforce/api/asset/create-requisites';
+import {login, search} from '../../salesforce/ui/action'
+import {deleteAsset} from '../../salesforce/api/asset/delete-requisites';
+import {pageTransporter} from '../../salesforce/ui/transporter'
+import {validateResults} from '../../salesforce/ui/validate-searh-results';
+const apiLogin = require("../../salesforce/api/login")
 const requiredAsset = require('../../fixtures/features/asset/all-table-attributes.json')
 
 describe('Search asset', () => {

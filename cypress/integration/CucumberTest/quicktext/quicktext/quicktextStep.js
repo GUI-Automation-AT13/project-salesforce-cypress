@@ -2,13 +2,13 @@
 
 const {And, Given, Then, When} = require('cypress-cucumber-preprocessor/steps')
 const endPoint = require('../../../../fixtures/endpoint/endpoint.json')
-const {pageTransporter} = require('../../../../src/salesforce/ui/transporter')
-const {dataTableToJson} = require('../../../../src/utils/convertToJson')
-const {createQuickText} = require('../../../../src/salesforce/ui/quickText/new-quicktext')
-const {login} = require('../../../../src/salesforce/ui/action')
-const {validateQuickText} = require('../../../../src/salesforce/ui/quickText/validate-quicktext')
-const quickText = require('../../../../src/salesforce/ui/quickText/quickText')
-const {deleteQuickText} = require('../../../../src/salesforce/api/quicktext/delete-quicktext')
+const {pageTransporter} = require('../../../../salesforce/ui/transporter')
+const {dataTableToJson} = require('../../../../support/utils/convertToJson')
+const {createQuickText} = require('../../../../salesforce/ui/quickText/new-quicktext')
+const {login} = require('../../../../salesforce/ui/action')
+const {validateQuickText} = require('../../../../salesforce/ui/quickText/validate-quicktext')
+const quickText = require('../../../../salesforce/ui/quickText/quickText')
+const {deleteQuickText} = require('../../../../salesforce/api/quicktext/delete-quicktext')
 
 let newObject = '';
 

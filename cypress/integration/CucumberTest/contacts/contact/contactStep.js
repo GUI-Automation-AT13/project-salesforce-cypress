@@ -2,14 +2,14 @@
 
 import {And, Given, Then, When} from "cypress-cucumber-preprocessor/steps";
 const endPoint = require('../../../../fixtures/endpoint/endpoint.json')
-const {pageTransporter} = require('../../../../src/salesforce/ui/transporter')
+const {pageTransporter} = require('../../../../salesforce/ui/transporter')
 const contact = require("../../../../fixtures/locator/contact/contacts.json");
-const {dataTableToJson} = require('../../../../src/utils/convertToJson')
-import {createContact} from '../../../../src/salesforce/ui/contact/new-contact'
-import {login} from '../../../../src/salesforce/ui/action'
+const {dataTableToJson} = require('../../../../support/utils/convertToJson')
+import {createContact} from '../../../../salesforce/ui/contact/new-contact'
+import {login} from '../../../../salesforce/ui/action'
 import {token} from './contactHook'
-import {validateContact} from '../../../../src/salesforce/ui/contact/detail-contact'
-const feature = require('../../../../src/salesforce/api/features')
+import {validateContact} from '../../../../salesforce/ui/contact/detail-contact'
+const feature = require('../../../../salesforce/api/features')
 
 let newObject = '';
 let idObject = ''
