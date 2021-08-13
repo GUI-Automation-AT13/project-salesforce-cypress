@@ -31,7 +31,7 @@ describe('test for contact feature', () => {
         cy.clickField(contact.newContactBtn)
     })
 
-    it.only('create contact with all fields', () => {
+    it('create contact with all fields', () => {
 
         const account = {
             "Name": data.accountName
