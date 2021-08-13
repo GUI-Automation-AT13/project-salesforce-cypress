@@ -1,13 +1,13 @@
-import {clickField, login} from "../../../../src/salesforce/ui/action";
-import {createAssetRequisites, setAssetPreRequest} from "../../../../src/salesforce/api/asset/create-requisites";
-import {createAsset} from "../../../../src/salesforce/ui/asset/new-asset";
-import {dataTableToJson} from "../../../../src/utils/convertToJson";
-import {deleteAsset} from "../../../../src/salesforce/api/asset/delete-requisites";
-import {pageTransporter} from "../../../../src/salesforce/ui/transporter";
-import {validateAsset} from "../../../../src/salesforce/ui/asset/validate-asset";
+import {clickField, login} from "../../../../salesforce/ui/action";
+import {createAssetRequisites, setAssetPreRequest} from "../../../../salesforce/api/asset/create-requisites";
+import {createAsset} from "../../../../salesforce/ui/asset/new-asset";
+import {dataTableToJson} from "../../../../support/utils/convertToJson";
+import {deleteAsset} from "../../../../salesforce/api/asset/delete-requisites";
+import {pageTransporter} from "../../../../salesforce/ui/transporter";
+import {validateAsset} from "../../../../salesforce/ui/asset/validate-asset";
 const endPoint = require('../../../../fixtures/endpoint/endpoint.json')
 const assets = require('../../../../fixtures/locator/asset/assets.json')
-const apiLogin = require("../../../../src/salesforce/api/login")
+const apiLogin = require("../../../../salesforce/api/login")
 
 let newObject = {};
 let ids = {}
