@@ -1,10 +1,10 @@
-import {createAssetRequisites, createEntity, createRequisites} from './../../src/salesforce/api/asset/create-requisites';
-import {login, refreshTable} from '../../src/salesforce/ui/action'
-import {deleteAsset} from '../../src/salesforce/api/asset/delete-requisites';
-import {pageTransporter} from '../../src/salesforce/ui/transporter'
-import {setExpectedAssetJson} from '../../src/salesforce/ui/asset/validate-table';
-import {validateTableData} from '../../src/salesforce/ui/validate-tabledata'
-const apiLogin = require("../../src/salesforce/api/login")
+import {createAssetRequisites, createEntity, createRequisites} from '../../salesforce/api/asset/create-requisites';
+import {login, refreshTable} from '../../salesforce/ui/action'
+import {deleteAsset} from '../../salesforce/api/asset/delete-requisites';
+import {pageTransporter} from '../../salesforce/ui/transporter'
+import {setExpectedAssetJson} from '../../salesforce/ui/asset/validate-table';
+import {validateTableData} from '../../salesforce/ui/validate-tabledata'
+const apiLogin = require("../../salesforce/api/login")
 const endpoint = require('../../fixtures/endpoint/endpoint.json')
 const requiredAsset = require('../../fixtures/features/asset/all-table-attributes.json')
 

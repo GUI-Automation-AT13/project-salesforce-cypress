@@ -1,6 +1,6 @@
-const detailContact = require("../../../../fixtures/locator/contact/detail-contact.json");
-const {getCurrentDate} = require('../../../utils/formatDate')
-const {createContactName} = require('../../../utils/formContactName')
+const detailContact = require("../../../fixtures/locator/contact/detail-contact.json");
+const {getCurrentDate} = require('../../../support/utils/formatDate')
+const {createContactName} = require('../../../support/utils/formContactName')
 
 export function validateContact(contactData) {
   const createdBy = getCurrentDate().substring(0, 15)

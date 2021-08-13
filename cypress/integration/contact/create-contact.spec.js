@@ -1,17 +1,17 @@
 /// <reference types='Cypress' />
 
 const endPoint = require('../../fixtures/endpoint/endpoint.json')
-const {pageTransporter} = require('../../src/salesforce/ui/transporter')
+const {pageTransporter} = require('../../salesforce/ui/transporter')
 const data = require('../../fixtures/features/contact/contact.json')
 const dataDuplicate = require('../../fixtures/features/contact/duplicate_record.json')
 const invalidData = require('../../fixtures/features/contact/invalid_data.json')
 const newContactJSON = require('../../fixtures/locator/contact/new-contact.json')
 const contact = require("../../fixtures/locator/contact/contacts.json");
-const apiLogin = require("../../src/salesforce/api/login")
-const feature = require('../../src/salesforce/api/features')
-import {createContact} from '../../src/salesforce/ui/contact/new-contact'
-import {login} from '../../src/salesforce/ui/action'
-import {validateContact} from '../../src/salesforce/ui/contact/detail-contact'
+const apiLogin = require("../../salesforce/api/login")
+const feature = require('../../salesforce/api/features')
+import {createContact} from '../../salesforce/ui/contact/new-contact'
+import {login} from '../../salesforce/ui/action'
+import {validateContact} from '../../salesforce/ui/contact/detail-contact'
 
 describe('test for contact feature', () => {
     let token = ''

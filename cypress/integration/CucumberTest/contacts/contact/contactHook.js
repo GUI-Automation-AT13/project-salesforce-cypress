@@ -1,4 +1,4 @@
-const apiLogin = require("../../../../src/salesforce/api/login")
+const apiLogin = require("../../../../salesforce/api/login")
 let token = ''
 before(() => {
     apiLogin.login().then((result) => {
