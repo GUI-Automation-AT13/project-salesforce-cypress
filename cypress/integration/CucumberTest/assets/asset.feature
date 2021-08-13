@@ -4,14 +4,15 @@ Feature: Create Asset
     Given I login to salesforce site as an admin user
     And I navigate to "asset" page
     When I create a new Asset with fields
-      | name | New Asset |
+      | name    | New Asset |
+      | account | cuenta 14 |
     Then I validate all fields
 
   Scenario: create an asset with all fields
     Given I login to salesforce site as an admin user
     And I navigate to "asset" page
     When I create a new Asset with fields
-      | name           | cuenta 14     |
+      | name           | New Asset     |
       | serial number  | Serial Number |
       | install date   | 28/7/2021     |
       | purchase date  | 15/8/2021     |
