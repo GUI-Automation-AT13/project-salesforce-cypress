@@ -5,6 +5,7 @@ import {deleteAsset} from '../../salesforce/api/asset/delete-requisites'
 import {pageTransporter} from '../../salesforce/ui/transporter'
 import {setExpectedAssetJsonFromUi} from '../../salesforce/ui/asset/validate-table';
 import {validateAsset} from '../../salesforce/ui/asset/validate-asset'
+import {validateJsons} from '../../salesforce/ui/validate-searh-results'
 import {validateTableData} from '../../salesforce/ui/validate-tabledata'
 const endpoint = require('../../fixtures/endpoint/endpoint.json')
 const assets = require('../../fixtures/locator/asset/assets.json')
@@ -29,7 +30,7 @@ describe('Create an Asset', () => {
         pageTransporter(endpoint.asset)
     })
 
-    it('should create it with necessary attributes', () => {
+    it.only('should create it with necessary attributes', () => {
         clickField(assets.newAssetBtn)
 
         const asset = setAssetPreRequest(necessaryAttrAsset)
@@ -43,7 +44,7 @@ describe('Create an Asset', () => {
         goBackToAssetTable()
 
         validateTableData(necessaryAttrAsset.name).then((actualData) => {
-            expect(actualData).to.deep.equal(expectedData)
+            validateJsons(actualData, expectedData)
         })
     })
 
