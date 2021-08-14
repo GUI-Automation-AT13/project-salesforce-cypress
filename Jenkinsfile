@@ -14,7 +14,7 @@ pipeline {
                         git url: 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run run-dashboard-parallel'
+                        bat 'npm run npx cypress run --record --key=541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     }
                 }
                 stage('Slave Node2') {
@@ -25,7 +25,7 @@ pipeline {
                         git url: 'https://github.com/GUI-Automation-AT13/project-salesforce-cypress.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run run-dashboard-parallel'
+                        bat 'npm run npx cypress run --record --key=541783f3-7a1a-4851-965f-109d067874f9 --parallel'
                     }
                 }
             }        
