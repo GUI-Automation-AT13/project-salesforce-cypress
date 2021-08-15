@@ -6,7 +6,6 @@ Feature: Create Contact
     When I create a new Contact with fields
       | lastName | lastnameTest1 |
     Then I validate all fields
-    And I delete "Contact"
     And I navigate to "contact" page
 
   Scenario: create a contact with all fields
@@ -41,5 +40,4 @@ Feature: Create Contact
       | level             | Primary        |
       | description       | good test      |
     Then I validate all fields
-    And I delete "Contact"
     And I navigate to "contact" page
