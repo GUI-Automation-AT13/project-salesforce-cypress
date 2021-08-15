@@ -8,7 +8,15 @@
     "test": "node_modules/.bin/cypress run",
     "checkstyle": "node_modules/.bin/eslint cypress",
     "cy:run": "node ./scripts/cypress.js",
-    "cy:run_browser": "npm cypress run --browser chrome & npx cypress run --browser edge & npx cypress run --browser firefox"
+    "allTests-headless": "npx cypress run",
+    "allTests-headed": "npx cypress run --headed",
+    "allTests-chrome": "npx cypress run --browser chrome",
+    "allTests-firefox": "npx cypress run --browser firefox",
+    "allTests-edge": "npx cypress run --browser edge",
+    "run-dashboard": "npx cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9",
+    "run-dashboard-parallel": "npx cypress run --record --key 541783f3-7a1a-4851-965f-109d067874f9 --parallel",
+    "allTests-browser": "npx cypress run --spec cypress/integration/*",
+    "cypress-multi-browser": "npm run allTests-browser -- --browser electron --headed & npm run allTests-browser -- --browser edge --headed"
   },
   "keywords": [],
   "author": "",

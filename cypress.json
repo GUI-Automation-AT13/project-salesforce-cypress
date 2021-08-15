@@ -12,7 +12,7 @@
     "json": true
   },
   "retries": {
-    "runMode": 1
+    "runMode": 2
   },
   "projectId": "hufdw9"
 }
